@@ -1,0 +1,622 @@
+/* ORANGE Color   #e67e22 */
+
+/*=======================================*/
+/* BASIC SETUP */
+/*=======================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*=======================================*/
+/* REUSABLE CODE */
+/*=======================================*/
+.row {
+    max-width: 57rem;
+    margin: 0 auto;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+.box {
+    padding: 0.5rem;
+}
+
+
+
+
+/* ========= HEADINGS ========== */
+h1 {
+    margin-top: 0;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    line-height: 120%;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    line-height: 120%;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-align: center;   
+}
+
+h2:after {
+    display: block;
+    height: 0.1rem;
+    background-color: #e67e22;
+    content: '';
+    width: 5rem;
+    margin: 1.5rem auto;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    font-weight: 300;
+    line-height: 120%;
+    
+    
+    text-transform: uppercase;
+    text-align: center;  
+}
+
+
+/*========== PARAGRAPHS ==========*/
+.long-copy {
+    width: 70%;
+    line-height: 1.3rem;
+    margin: auto;
+}
+
+.box p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+
+/* ========= BUTTONS ========== */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    font-weight: 300;
+    padding: 0.5rem 1rem;
+    border: 0.05rem solid #e67e22;
+    border-radius: 2.5rem;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s  ;     
+}
+
+    .btn-full:link,
+    .btn-full:visited,
+    input[type=submit] {
+        background-color: #e67e22;
+        color: #fff;
+        margin-right: 1rem;
+    }
+
+    .btn-shadow:link,
+    .btn-shadow:visited {
+        color: #e67e22;
+    }
+
+    .btn:hover,
+    input[type=submit]:hover {
+        border-color: #bf6516 ;
+    }
+
+    .btn-full:hover,
+    input[type=submit]:hover {
+        background-color: #bf6516;
+
+    }
+
+    .btn-shadow:hover {
+        background-color: #bf6516;
+        color: #fff;
+    }
+
+
+
+/*=======================================*/
+/* HEADER */
+/*=======================================*/    
+header {
+    background-image: linear-gradient( rgba( 0,0,0,0.7), rgba( 0,0,0,0.7)),url(img/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    
+    background-attachment: fixed;  
+}
+
+.hero-text-box {
+    position: absolute;
+    margin: 0;
+    width: 57rem; /* 1140px */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.logo {
+    height: 5rem;
+    width: auto;
+    float: left;
+    margin-top: 1rem;
+}
+
+.main-nav {
+    float: right;
+    margin-top: 2.75rem;
+    
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 2rem;
+    list-style: none;
+    
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    border-bottom: 0.05rem solid transparent;
+    transition: border-bottom 0.2s ease;
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 0.05rem solid #e67e22 ;
+}
+
+
+/*=======================================*/
+/* FEATURES Section */
+/*=======================================*/
+
+/* =========== ICONS ============ */
+.section-features .long-copy {
+    margin-bottom: 2rem;
+}
+
+.icon-big{
+    font-size: 2.5rem;
+    display: block;
+    margin : 0 40% 1rem 40%;
+    color: #e67e22;
+    
+}
+
+
+/*=======================================*/
+/* MEALS */
+/*=======================================*/
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none ;
+    width: 100%;
+
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;    
+}
+
+.meal-photo {
+    width: 100%;
+    overflow: hidden;
+    background: #000;   
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s,opacity 0.5s;
+    
+}
+
+    .meal-photo img:hover {
+        transform: scale(1.03);
+        opacity: 1;
+    }
+
+
+
+/*=======================================*/
+/* HOW IT WORKS*/
+/*=======================================*/ 
+.section-steps {
+    background-color: #f1f1f1;
+}
+
+.step-box:first-child {
+    text-align: right;
+    padding-right: 2rem;
+    margin-top: 1.5rem;
+}
+
+.step-box:last-child {
+    text-align: left;
+    padding-left: 3rem;
+    margin-top: 6rem;
+}
+
+.step-box img {
+    width: 12rem;
+}
+
+.steps {
+    margin-bottom: 2rem;
+}
+
+
+
+.steps div { 
+    border: 0.1rem solid #e67e22;
+    color: #e67e22;
+    font-weight: 400;
+    display: inline-block;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    float: left;
+    margin-right: 1.5rem;
+}
+
+.steps:last-of-type {
+    margin-bottom: 6rem;
+}
+
+
+.download-btn img {
+    height: 2.5rem;
+    width: auto;
+    
+}
+
+.download-btn img:first-child {
+    margin-right: 1rem;
+}
+
+
+
+/*=======================================*/
+/* CITIES*/
+/*=======================================*/ 
+.section-cities .row .box {
+    font-size: 0.9rem;
+}
+
+.section-cities .box img {
+    width: 100%;
+}
+
+.section-cities .box h3 {
+    margin-top: 1rem;
+}
+.section-cities .box div {
+     margin: 0.3rem 0;
+ }
+
+ .icon-bullets {
+     display: inline-block;
+     text-align: left;
+     vertical-align: middle;
+     font-size: 1.2rem;
+     margin-right: 0.2rem;
+     color: #e67e22;
+ }
+
+.section-cities .box p {
+     display: inline-block;
+    vertical-align: middle;
+ }
+
+ .twitter-link:link,
+ .twitter-link:visited {
+    text-decoration: none;
+     color: #e67e22;
+     transition: color 0.5s;
+ }
+
+    .twitter-link:hover,
+    .twitter-link:active {
+        color: #555;
+    }
+
+
+
+/*=======================================*/
+/* TESTIMONIALS */
+/*=======================================*/ 
+.section-testimonials {
+    background-image: linear-gradient( rgba( 0,0,0,0.7), rgba( 0,0,0,0.7)),url(img/back-customers.jpg);
+    background-size: cover ;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+blockquote {
+    padding: 0.5rem;
+    font-style: italic;
+    line-height: 1.4rem;
+    position: relative;
+    margin-top: 1rem;
+}
+
+blockquote::before{
+    content: "\201C";
+    font-size: 5rem;
+    position: absolute;
+    left: -0.4rem;
+    top: -0.2rem;
+}
+
+.box cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    text-align: end;
+}
+
+.box cite img {
+    display: inline-block;
+    width: 4rem;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+
+
+/*=======================================*/
+/* SIGN UP & PRICING */
+/*=======================================*/ 
+
+.section-signup {
+    background-color: #dfdfdf;
+}
+
+.plan-box {
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 2rem;
+    box-shadow: 0.8rem 0.8rem 1rem 0.05rem #555;
+    
+}
+
+.plan-name {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.plan-price {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-top-right-radius: 0.5rem ;      
+    border-top-left-radius: 0.5rem ;      
+}
+
+.plan-price div {
+    color: #e67e22;
+    
+}   
+
+.plan-price div h3 {
+    padding: 0 0.7rem 0 0;
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+    font-size: 3rem;
+}
+   
+ .plan-details {
+    padding: 1rem 1.2rem;
+    background-color: #fff;
+    line-height: 1.4rem;  
+    border-bottom-right-radius: 0.5rem ;
+    border-bottom-left-radius: 0.5rem ;
+}
+
+.plan-details li {
+    list-style: none;
+}
+
+.plan-details li ion-icon {
+    margin-right: 0.7rem;
+    color: #e67e22;
+}
+
+.plan-details div {
+    text-align: center;
+    margin: 1rem auto 0.5rem auto;
+    
+}
+
+
+
+/*=======================================*/
+/* SIGN UP & PRICING */
+/*=======================================*/ 
+.form-left {
+    margin-left: 15rem;
+    text-align: left;
+    padding-right: 2rem ;
+    
+}
+
+.form-left p {
+    line-height: 2rem;
+    
+}
+.form-right {
+    text-align: left;
+    padding-left: 2rem;
+    line-height: 2rem;
+    ;
+}
+
+
+
+/*=======================================*/
+/* CONTACT FORM */
+/*=======================================*/ 
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 0.4rem;
+    outline: none;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+input[type=checkbox] {
+    margin-right: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    height: 5rem;
+    min-height: 1rem;
+    max-width: 100%;
+}
+
+
+
+/*=======================================*/
+/* FOOTER */
+/*=======================================*/ 
+footer {
+    background-color: #555;
+    color: #fff;
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+
+footer li {
+    list-style: none;
+    display: inline-block;
+    margin: 0.6rem;
+}
+
+footer li:first-child {
+    margin-left: 0;
+}
+
+footer li:last-child {
+    margin-right: 0;
+}
+
+
+footer li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+footer p {
+    text-align: center;
+}
+
+.footer-nav {
+    float: left;
+}
+
+.footer-nav a{
+    transition: all 0.2s ;
+}
+
+.footer-nav a:hover {
+    color: #bf6516;
+    transform: scale(1.2); 
+}
+
+
+.social-links {
+    float: right;
+}
+
+.social-links ion-icon{
+    transition: all 0.2s ;
+}
+
+.social-links ion-icon[name=logo-facebook]:hover {
+    color: #3b5998;
+    transform: scale(1.5);
+    
+}
+.social-links ion-icon[name=logo-twitter]:hover {
+    color: #1da1f2;
+    transform: scale(1.5);
+    
+}
+.social-links ion-icon[name=logo-youtube]:hover {
+    color: #ff0000;
+    transform: scale(1.5);
+    
+}
+.social-links ion-icon[name=logo-instagram]:hover {
+    color: #c32aa3;
+    transform: scale(1.5);
+    
+}
+
+
