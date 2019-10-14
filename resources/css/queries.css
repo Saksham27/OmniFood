@@ -1,0 +1,89 @@
+/*------- BIG TABLETS to 1200px : smaller than 1140px  ---------*/
+@media only screen and ( max-width: 1200px ){
+    .hero-text-box {
+        width: 100%;
+        padding : 0 2%;
+    }
+
+    .row {
+        max-width: 100%;
+        padding: 0 2%;
+    }
+    
+    html {
+        font-size: 18px;
+    }
+
+    .plan-details {
+        padding: 1rem 0.9rem;
+        font-size: 1rem;
+        line-height: 1.4rem; 
+    }
+
+    h3 {
+        font-size: 1.1rem; 
+    }
+
+}
+
+
+
+/*------- SMALL TABLETS to BIG TABLETS : from 768 to 1023px  ---------*/
+@media only screen and ( max-width: 1023px ){
+    .hero-text-box {
+        width: 100%;
+        padding : 0 2%;
+    }
+
+    .row {
+        max-width: 100%;
+        padding: 0 2%;
+    }
+
+    section {
+        padding:3rem 0;
+    }
+    
+    html {
+        font-size: 14px;
+    }
+
+    .long-copy {
+        width: 80%;
+        line-height: 1.2rem;
+    }
+
+    .plan-details {
+        padding: 1rem 0.9rem;
+        font-size: 0.9rem;
+        line-height: 1.4rem; 
+    }
+
+    .step-box img {
+        width: 11rem;
+    }
+    .step-box:last-child {
+        margin-top: 5rem;
+    }
+    .download-btn img {
+        height: 2.3rem;
+        width: auto;
+        
+    }
+
+    
+}
+
+
+
+/*------- SMALL PHONES to SMALL TABLETS : from 481 to 767px  ---------*/
+@media only screen and ( max-width: 767px ){
+
+}
+
+
+
+/*------- SMALL PHONES : from 0 to 480px  ---------*/
+@media only screen and ( max-width: 480px ){
+
+}
