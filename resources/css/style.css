@@ -221,6 +221,25 @@ header {
 }
 
 
+
+/* ========= Navigation Icon for small screen ========== */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 1rem;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon ion-icon {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+
 /* ========= STICKY Navigation ========== */
 .sticky {
     position: fixed;

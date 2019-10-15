@@ -70,6 +70,21 @@ $(document).ready(function () {
         offset: '25%'
     });
 
+    /* ========= Mobile Navigation button interation ========== */
+    let nav = '.js--mobile-nav-icon';
+    $(nav).click(function() {
+        $('.js--main-nav').slideToggle(200);
+
+        if ($('.js--hamburger').hasClass('hidden')) {
+            $('.js--hamburger').removeClass('hidden');
+            $('.js--close').addClass('hidden');
+        } else {
+            $('.js--hamburger').addClass('hidden');
+            $('.js--close').removeClass('hidden');
+        }
+           
+    });
+
 }
 
 );
