@@ -61,6 +61,7 @@
 
     .step-box img {
         width: 11rem;
+        height: 20%;
     }
     .step-box:last-child {
         margin-top: 5rem;
@@ -70,6 +71,9 @@
         width: auto;
         
     }
+    .steps:last-of-type {
+    margin-bottom: 4rem;
+}
 
     
 }
@@ -78,9 +82,110 @@
 
 /*------- SMALL PHONES to SMALL TABLETS : from 481 to 767px  ---------*/
 @media only screen and ( max-width: 767px ){
+    
+    .hero-text-box {
+        width: 100%;
+        padding : 0 3%;
+    }
+
+    .row {
+        max-width: 100%;
+        padding: 0 3%;
+    }
+    
+    section {
+        padding:2rem 0;
+    }
+
+    html {
+        font-size: 15px;
+    }
+
+    .box {
+        padding: 0.4rem 0.2rem;
+    }
+
+
+    .long-copy {
+        width: 90%;
+        
+    }
+    .col { 
+        width: 100%;
+        margin: 1% 0 1% 0;
+    }
+
+    .main-nav {
+        display: none;
+    }
+     .icon-big{
+        margin : 0 auto 1rem auto;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.3rem;  
+    }
+
+    .step-box:first-child {
+        text-align: center;
+        padding-left: 2rem;
+        margin-top: 1rem;
+    }
+
+    .step-box:last-child {
+        text-align: left;
+        padding-left: 2rem;
+        margin-top: 2rem;
+    }
+
+    .step-box img {
+        width: 8rem;
+    }
+
+    .steps:last-of-type {
+    margin-bottom: 2rem;
+    }
+
+    .download-btn img {
+        height: 2.5rem;
+        width: auto;
+    }
+
+    .section-cities .box {
+        padding: 1.5rem 10% 0 10%;
+    }
+
+    .section-cities .box h3 {
+        margin-bottom: 0; 
+    }
+    .contact-form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    input[type=submit] {
+        margin: 0 40% 0 40%;
+
+    }
+
+    footer li {
+        margin: 0 0.3rem 0.6rem 0.3rem;
+    }
+
+    footer .col:first-of-type {
+        width: 60%;
+    }
+
+    footer .col:last-of-type {
+        width: 40%;
+    }
 
 }
-
 
 
 /*------- SMALL PHONES : from 0 to 480px  ---------*/

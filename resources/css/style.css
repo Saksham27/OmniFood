@@ -6,7 +6,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html {
@@ -116,6 +117,7 @@ input[type=submit] {
     border: 0.05rem solid #e67e22;
     border-radius: 2.5rem;
     text-decoration: none;
+    -webkit-transition: background-color 0.2s, color 0.2s, border-color 0.2s  ;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s  ;     
 }
 
@@ -154,11 +156,12 @@ input[type=submit] {
 /* HEADER */
 /*=======================================*/    
 header {
+    background-image: -webkit-gradient( linear, left top, left bottom, from(rgba( 0,0,0,0.7)), to(rgba( 0,0,0,0.7))),url(img/hero.jpg);
     background-image: linear-gradient( rgba( 0,0,0,0.7), rgba( 0,0,0,0.7)),url(img/hero.jpg);
     height: 100vh;
     background-size: cover;
-    
-    background-attachment: fixed;  
+    background-attachment: fixed;
+    ;  
 }
 
 .hero-text-box {
@@ -167,7 +170,8 @@ header {
     width: 57rem; /* 1140px */
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
 }
 
 .logo {
@@ -199,6 +203,7 @@ header {
     font-size: 0.9rem;
     padding: 0.5rem 0;
     border-bottom: 0.05rem solid transparent;
+    -webkit-transition: border-bottom 0.2s ease;
     transition: border-bottom 0.2s ease;
 
 }
@@ -256,13 +261,18 @@ header {
     opacity: 0.7;
     width: 100%;
     height: auto;
-    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: opacity 0.5s,-webkit-transform 0.5s;
+    transition: opacity 0.5s,-webkit-transform 0.5s;
     transition: transform 0.5s,opacity 0.5s;
+    transition: transform 0.5s,opacity 0.5s,-webkit-transform 0.5s;
     
 }
 
     .meal-photo img:hover {
-        transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+                transform: scale(1.03);
         opacity: 1;
     }
 
@@ -310,6 +320,8 @@ header {
     float: left;
     margin-right: 1.5rem;
 }
+
+
 
 .steps:last-of-type {
     margin-bottom: 6rem;
@@ -364,6 +376,7 @@ header {
  .twitter-link:visited {
     text-decoration: none;
      color: #e67e22;
+     -webkit-transition: color 0.5s;
      transition: color 0.5s;
  }
 
@@ -378,6 +391,7 @@ header {
 /* TESTIMONIALS */
 /*=======================================*/ 
 .section-testimonials {
+    background-image: -webkit-gradient( linear, left top, left bottom, from(rgba( 0,0,0,0.7)), to(rgba( 0,0,0,0.7))),url(img/back-customers.jpg);
     background-image: linear-gradient( rgba( 0,0,0,0.7), rgba( 0,0,0,0.7)),url(img/back-customers.jpg);
     background-size: cover ;
     background-attachment: fixed;
@@ -428,7 +442,8 @@ blockquote::before{
     width: 90%;
     margin-left: 5%;
     border-radius: 2rem;
-    box-shadow: 0.8rem 0.8rem 1rem 0.05rem #555;
+    -webkit-box-shadow: 0.8rem 0.8rem 1rem 0.05rem #555;
+            box-shadow: 0.8rem 0.8rem 1rem 0.05rem #555;
     
 }
 
@@ -478,29 +493,6 @@ blockquote::before{
     text-align: center;
     margin: 1rem auto 0.5rem auto;
     
-}
-
-
-
-/*=======================================*/
-/* SIGN UP & PRICING */
-/*=======================================*/ 
-.form-left {
-    margin-left: 15rem;
-    text-align: left;
-    padding-right: 2rem ;
-    
-}
-
-.form-left p {
-    line-height: 2rem;
-    
-}
-.form-right {
-    text-align: left;
-    padding-left: 2rem;
-    line-height: 2rem;
-    ;
 }
 
 
@@ -581,12 +573,14 @@ footer p {
 }
 
 .footer-nav a{
+    -webkit-transition: all 0.2s ;
     transition: all 0.2s ;
 }
 
 .footer-nav a:hover {
     color: #bf6516;
-    transform: scale(1.2); 
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); 
 }
 
 
@@ -595,27 +589,32 @@ footer p {
 }
 
 .social-links ion-icon{
+    -webkit-transition: all 0.2s ;
     transition: all 0.2s ;
 }
 
 .social-links ion-icon[name=logo-facebook]:hover {
     color: #3b5998;
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
     
 }
 .social-links ion-icon[name=logo-twitter]:hover {
     color: #1da1f2;
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
     
 }
 .social-links ion-icon[name=logo-youtube]:hover {
     color: #ff0000;
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
     
 }
 .social-links ion-icon[name=logo-instagram]:hover {
     color: #c32aa3;
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
     
 }
 
