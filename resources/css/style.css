@@ -486,9 +486,9 @@ blockquote::before {
 .plan-box {
     width: 90%;
     margin-left: 5%;
-    border-radius: 2rem;
-    -webkit-box-shadow: 0.8rem 0.8rem 1rem 0.05rem #555;
-    box-shadow: 0.8rem 0.8rem 1rem 0.05rem #555;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0.8rem 0.8rem 0.5rem 0.05rem #555;
+    box-shadow: 0.8rem 0.8rem 0.5rem 0.05rem rgb(155, 154, 154);
 
 }
 
@@ -501,7 +501,7 @@ blockquote::before {
     background-color: #f1f1f1;
     padding: 1rem;
     border-top-right-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
+    border-top-left-radius: 2rem;
 }
 
 .plan-price div {
@@ -665,3 +665,18 @@ footer p {
     transform: scale(1.5);
 
 }
+
+
+
+/*=======================================*/
+/* ANIMATIONS */
+/*=======================================*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+}
+
+
+
