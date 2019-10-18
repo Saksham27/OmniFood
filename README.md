@@ -112,7 +112,7 @@ SOFTWARE.
 - Facebook - [Saksham singh](https://twitter.com/jamesqquick)
 - Stackoverflow - [Saksham27](https://stackoverflow.com/users/12167961/saksham27)
 
-- Mail - geekysaksham12@gmail.com
+- Mail - geekysaksham27@gmail.com
 
 
 [Back To The Top](#read-me-template)
